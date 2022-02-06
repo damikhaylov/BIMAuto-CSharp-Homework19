@@ -60,8 +60,6 @@ namespace Task1
                                 RAMCapacity = 16,  DriveCapacity = 512, GraphicsCardMemCapacity = 4, Price = 948, Count = 9},
             };
 
-            byte menuPoint = 0; // Переменная для выбора пользователем пункта меню
-
             while (true) // Программа выполняется в бесконечном цикле, пока пользователь не выберет вариант выхода в меню
             {
                 Console.WriteLine("\n>>> Выберите действие со списком компьютеров:\n");
@@ -74,6 +72,9 @@ namespace Task1
                 Console.WriteLine("7 — Определить, есть ли хотя бы один компьютер в количестве не менее 30 штук");
                 Console.WriteLine("0 — Завершить работу программы");
                 Console.Write("\nВаш выбор: ");
+
+                byte menuPoint; // Переменная для выбора пользователем пункта меню
+
                 try
                 {
                     menuPoint = Convert.ToByte(Console.ReadLine());
